@@ -1,1 +1,4 @@
-
+<launch>
+	<node pkg="ros_led" name="count_up" type="count.py" required="true" output="screen" />
+	<node pkg="ros_led" name="light" type="light.py" required="true" output="screen" />
+</launch>
