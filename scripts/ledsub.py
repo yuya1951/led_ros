@@ -74,6 +74,7 @@ def cb(message):
             f.write("15\n")
 
 if __name__ == '__main__':
-    rospy.init_node('twice')
-    sub = rospy.Subscriber('count_up', Int32, cb)
+    rospy.init_node('ledsub')
+    sub = rospy.Subscriber('led', Int32, cb)
+    pub = rospy.Publisher('ledsub', Int32, queue_size=1)
     rospy.spin()
