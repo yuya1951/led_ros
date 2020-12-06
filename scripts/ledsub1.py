@@ -2,7 +2,10 @@
 import rospy
 from std_msgs.msg import Int32
 
+n = 0
+
 def cb(message):
+   global n
     n = message.data%16
     rospy.loginfo(n)
 
@@ -45,7 +48,30 @@ def cb(message):
     elif n == 9 :
         with open("/dev/myled0", "w") as f:
             f.write("9\n")
+           
+    elif n == 10 :
+        with open("/dev/myled0", "w") as f:
+            f.write("10\n")
+    
+    elif n == 11 :
+        with open("/dev/myled0", "w") as f:
+            f.write(11\n")
+        
+    elif n == 12 :
+        with open("/dev/myled0", "w") as f:
+            f.write("12\n")
+                    
+    elif n == 13 :
+        with open("/dev/myled0", "w") as f:
+            f.write("13\n")
+                 
+    elif n == 14 :
+        with open("/dev/myled0", "w") as f:
+            f.write("14\n")
 
+    elif n == 15 :
+        with open("/dev/myled0", "w") as f:
+            f.write("15\n")
 
 if __name__ == '__main__':
     rospy.init_node('twice')
