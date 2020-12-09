@@ -21,7 +21,7 @@ static int led_number[4] ={22, 23, 24, 25};
 static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_t* pos)
 {
 	char c;
-	int i;
+	char s[5];
 	if(copy_from_user(&c,buf,sizeof(char)))
 		return -EFAULT;
 
@@ -85,37 +85,37 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 		gpio_base[10] = 1 << 24;
 		gpio_base[7] = 1 << 25;
 	}
-	else if(c == '10'){
+	else if(s[2] == '10'){
 		gpio_base[10] = 1 << 22;
 		gpio_base[10] = 1 << 23;
 		gpio_base[7] = 1 << 24;
 		gpio_base[7] = 1 << 25;
 	}
-	else if(c == '11'){
+	else if(s[2] == '11'){
 		gpio_base[7] = 1 << 22;
 		gpio_base[7] = 1 << 23;
 		gpio_base[7] = 1 << 24;
 		gpio_base[10] = 1 << 25;
 	}
-	else if(c == '12'){
+	else if(s[2] == '12'){
 		gpio_base[7] = 1 << 22;
 		gpio_base[10] = 1 << 23;
 		gpio_base[7] = 1 << 24;
 		gpio_base[7] = 1 << 25;
 	}
-	else if(c == '13'){
+	else if(s[2] == '13'){
 		gpio_base[7] = 1 << 22;
 		gpio_base[7] = 1 << 23;
 		gpio_base[10] = 1 << 24;
 		gpio_base[7] = 1 << 25;
 	}
-	else if(c == '14'){
+	else if(s[2] == '14'){
 		gpio_base[10] = 1 << 22;
 		gpio_base[7] = 1 << 23;
 		gpio_base[7] = 1 << 24;
 		gpio_base[7] = 1 << 25;
 	}
-	else if(c == '15'){
+	else if(s[2] == '15'){
 		gpio_base[7] = 1 << 22;
 		gpio_base[7] = 1 << 23;
 		gpio_base[7] = 1 << 24;
