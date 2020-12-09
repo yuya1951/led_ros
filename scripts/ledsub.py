@@ -37,38 +37,7 @@ def callback(messsage):
         with open("/dev/myled0", "w") as f:
             f.write("7\n" )
 
-    if message == j:
-        with open("/dev/myled0", "w") as f:
-            f.write("8\n" )
-	
-    if message == k:
-        with open("/dev/myled0", "w") as f:
-	    f.write("9\n" )
-
-    if message == l :
-        with open("/dev/myled0", "w") as f:
-            f.write("10\n" )
-
-    if message == m:
-        with open("/dev/myled0", "w") as f:
-            f.write("11\n" )
-	
-    if message == n:
-        with open("/dev/myled0", "w") as f:
-	    f.write("12\n" )
-
-    if message == o :
-        with open("/dev/myled0", "w") as f:
-            f.write("13\n" )
-
-    if message == p:
-        with open("/dev/myled0", "w") as f:
-            f.write("14\n" )
-
-     if message == q:
-        with open("/dev/myled0", "w") as f:
-	    f.write("15\n" )
-
+    
     
 	
 	
@@ -83,13 +52,7 @@ if __name__ == "__main__":
 	h = Int32(6)
         i = Int32(7)
         j = Int32(8)
-	k = Int32(9)
-        l = Int32(10)
-        m = Int32(11)
-	n = Int32(12)
-        o = Int32(13)
-        p = Int32(14)
-	q = Int32(15)
+	
         
         
 	rospy.init_node("ledsub")
