@@ -54,8 +54,8 @@ if __name__ == "__main__":
 	j = Int32(8)
 	
         
-	
-        rospy.init_node("ledsub")
+
+	rospy.init_node("ledsub")
 	sub = rospy.Subscriber("led", Int32, callback)
 	pub = rospy.Publisher("ledsub", Int32, queue_size = 1)
 	rospy.spin()
