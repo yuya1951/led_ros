@@ -69,9 +69,7 @@ def callback(messsage):
         with open("/dev/myled0", "w") as f:
 	    f.write("15\n" )
 
-    if message == r:
-        with open("/dev/myled0", "w") as f:
-            f.write("16\n" )
+    
 	
 	
 	
@@ -92,7 +90,7 @@ if __name__ == "__main__":
         o = Int32(13)
         p = Int32(14)
 	q = Int32(15)
-        r = Int32(16)
+        
         
 	rospy.init_node("ledsub")
 	sub = rospy.Subscriber("led", Int32, callback)
