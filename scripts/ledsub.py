@@ -3,7 +3,7 @@
 import rospy
 from std_msgs.msg import Int32
 
-def callback(messsage):
+def callback(message):
 
     if message == a:
         with open("/dev/myled0", "w") as f:
@@ -53,9 +53,8 @@ if __name__ == "__main__":
 	i = Int32(7)
 	j = Int32(8)
 	
-        
-
-	rospy.init_node("ledsub")
+	
+        rospy.init_node("ledsub")
 	sub = rospy.Subscriber("led", Int32, callback)
 	pub = rospy.Publisher("ledsub", Int32, queue_size = 1)
 	rospy.spin()
