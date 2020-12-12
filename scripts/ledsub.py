@@ -9,35 +9,35 @@ def cb(message):
 	global n
 	n = message.data
 	
-	if message == "0":
+	if n == 0:
 		with open("/dev/myled0", "w") as f:
 			f.write("0\n" )
 	
-	if message == "1":
+	elif n == 1:
 		with open("/dev/myled0", "w") as f:
 			f.write("1\n" )
 
-	if message == "2":
+	elif n == 2:
 		with open("/dev/myled0", "w") as f:
 			f.write("2\n" )
 	
-	if message == "3":
+	elif n == 3:
 		with open("/dev/myled0", "w") as f:
 			f.write("3\n" )
 
-	if message == "4":
+	elif n == 4:
 		with open("/dev/myled0", "w") as f:
 			f.write("4\n" )
 
-	if message == "5":
+	elif n == 5:
 		with open("/dev/myled0", "w") as f:
 			f.write("5\n" )
 	
-	if message == "6":
+	elif n == 6:
 		with open("/dev/myled0", "w") as f:
 			f.write("6\n" )
 			
-	if message == "7":
+	elif n == 7:
 		with open("/dev/myled0", "w") as f:
 			f.write("7\n" )
 
