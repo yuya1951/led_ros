@@ -12,5 +12,7 @@ if __name__ == "__main__":
 	
 while not rospy.is_shutdown():
 	n = input("echo")
+	if n.isdecimal():
+		n = int(n)
 	pub.publish(n)
 	rate.sleep()
