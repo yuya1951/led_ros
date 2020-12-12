@@ -44,5 +44,5 @@ def cb(message):
 
 if __name__ == "__main__":
 	rospy.init_node("ledsub")
-	sub = rospy.Subscriber("led", Int32, callback)
+	sub = rospy.Subscriber("led", Int32, cb)
 	rospy.spin()
