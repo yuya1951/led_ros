@@ -27,7 +27,7 @@ ROSを用いて、LEDを点灯させる。
     $cd src/ros_led/scripts/led
     $make
     $sudo insmod myled.ko
-    ($ sudo rmmod myled   //)
+    ($ sudo rmmod myled   //うえのコマンドでエラーが出た場合、このコマンドを入力し、その後、うえのコマンドを再入力する。)
     $sudo chmod 666 /dev/myled0
     
 5．パーミッションの設定を行う。
