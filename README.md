@@ -31,10 +31,7 @@ ROSを用いて、LEDを点灯させる。
     
 5．パーミッションの設定を行う。
 
-    $sudo chmod +x count.py
-    $sudo chmod +x light.py
-    $sudo chmod +x ledpub.py
-    $sudo chmod +x ledsub.py
+    $bash ROSsetup.bash
 
 6．コード１を行う場合以下のように行う。（抜け出す場合はctrl + C）
 
