@@ -24,8 +24,9 @@ ROSを用いて、LEDを点灯させる。
     $cd ..
     $catkin_make
 
-4．ledのファイルに移り、make、モジュールのインストール、パーミッションの変更を行う。
+4．ledのファイルに移り、make、モジュールのインストール、パーミッションの変更を行う。この時、別のターミナルでroscoreも行う。
 
+    $roscore
     $cd src/ros_led/scripts/led
     $bash setup.bash
     
@@ -36,7 +37,6 @@ ROSを用いて、LEDを点灯させる。
 
 6．コード１を行う場合以下のように行う。（抜け出す場合はctrl + C）
 
-    $roscore
     $roslaunch ros_led LED1.launch  
 
 7．コード２を行う場合以下のように行う。（抜け出す場合はctrl + C）
