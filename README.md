@@ -1,7 +1,7 @@
-# ロボットシステム学2020課題2
+# ロボットシステム学2020課題2      
 
-# テーマ
-ROSを用いて、LEDを点灯させる。
+# 目的
+ROSを搭載したラズベリーパイで、LEDを点灯する。（ラズベリーパイはUbuntu20.04を入れています。）
 
 [youtube動画](https://www.youtube.com/watch?v=QerocIwOUpk&feature=youtu.be)
 
