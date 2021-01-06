@@ -48,7 +48,7 @@ ROSを搭載したラズベリーパイで、LEDを点灯する。（ラズベ�
 
     $roslaunch ros_led LED1.launch  
 
-6．コード２を行う場合以下のように行う。（抜け出す場合はctrl + C）
+6．コード２を行う場合以下のように行う。0～7を入力すると、それぞれのパターンで、LEDが点灯する。（抜け出す場合はctrl + C）
 
     $roscore
     $roslaunch ros_led LED2.launch
