@@ -74,6 +74,6 @@ ROSのインストールは、千葉工業大学 上田先生の作成したも�
 
 # LICENSE
 
-[LICENSE](https://github.com/yuya1951/ros_led/blob/main/COPYING)
+LICENSEは[こちら](https://github.com/yuya1951/ros_led/blob/main/COPYING)
     
     
