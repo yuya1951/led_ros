@@ -1,4 +1,0 @@
-<launch>
-	<node pkg="ros_led" name="ledpub" type="ledpub.py" required="true" output="screen" />
-	<node pkg="ros_led" name="ledsub" type="ledsub.py" required="true" output="screen" />
-</launch>
