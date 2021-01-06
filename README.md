@@ -47,16 +47,12 @@ ROSのインストールは、千葉工業大学 上田先生の作成したも�
     $cd src/ros_led/scripts/led
     $bash setup.bash
     
-5．パーミッションの設定を行う。
 
-    $cd ..
-    $bash ROSsetup.bash
-
-6．コード１を行う場合以下のように行う。（抜け出す場合はctrl + C）
+5．コード１を行う場合以下のように行う。（抜け出す場合はctrl + C）
 
     $roslaunch ros_led LED1.launch  
 
-7．コード２を行う場合以下のように行う。（抜け出す場合はctrl + C）
+6．コード２を行う場合以下のように行う。（抜け出す場合はctrl + C）
 
     $roscore
     $roslaunch ros_led LED2.launch
